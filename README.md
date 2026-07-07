@@ -24,6 +24,10 @@ The proposed model demonstrates superior detail reconstruction performance in re
 2. Error Map Visualization
 ![Error Map](results/Comparison_Error.png)
 
+## Full Paper
+Detailed theoretical backgrounds and experimental results can be found in the original bachelor's thesis. Please note that the paper is written in Korean.
+* [Patch-based Focal Frequency Loss for Image Reconstruction (PDF)](Patch-based Focal Frequency Loss For Image Reconstruction.pdf)
+
 ## Repository Structure
 ```text
 Project/
@@ -36,35 +40,3 @@ Project/
 ├── train.py              # Model training script
 ├── utils.py              # Utilities for fixing seeds and loading models
 └── visualize.py          # Script for result visualization (Error Map, Zoom)
-```
-
-## Requirements
-* Python 3.8+
-* PyTorch & torchvision
-* diffusers
-* lpips
-* kagglehub
-* matplotlib
-
-## Usage
-
-### 1. Training
-Run train.py to train the model. The dataset required for training is automatically downloaded via kagglehub.
-```bash
-python train.py
-```
-
-### 2. Evaluation
-Use metric.py to measure PSNR, SSIM, and LPIPS metrics.
-```bash
-python metric.py
-```
-
-### 3. Visualization
-Use visualize.py to visualize the reconstruction results and Error Maps on the test dataset. Images are automatically saved in the results folder.
-```bash
-python visualize.py
-```
-
-## Pre-trained Models (Checkpoints)
-Pre-trained weight (.pth) files are uploaded separately to the [Releases] tab of this repository due to file size limits. To perform evaluation and visualization without training the model from scratch, please download the weight files from the Releases tab and place them in the checkpoints/ directory.
