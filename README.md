@@ -1,4 +1,4 @@
-# Patch-based Focal Frequency Loss for Image Reconstruction
+# Patch-based Focal Frequency Loss for Image Reconstruction PyTorch Implementation
 
 This repository contains the official PyTorch implementation of Patch-based Focal Frequency Loss (PB-FFL), proposed to address the spectral bias and high-frequency information loss inherent in Variational Autoencoder (VAE)-based generative models.
 
