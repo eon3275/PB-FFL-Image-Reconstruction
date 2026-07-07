@@ -79,6 +79,10 @@ Pre-trained weight (.pth) files are uploaded separately to the [Releases] tab of
 This project is deeply inspired by the core concepts of the original Focal Frequency Loss paper. I sincerely thank the authors for their foundational research and valuable theoretical insights.
 * [Focal Frequency Loss for Image Reconstruction and Synthesis (ICCV 2021)](https://github.com/EndlessSora/focal-frequency-loss)
 
+For quantitative evaluation, this project utilizes the following open-source libraries:
+* [LPIPS](https://github.com/richzhang/PerceptualSimilarity) for calculating perceptual similarity.
+* [TorchMetrics](https://lightning.ai/docs/torchmetrics/) for calculating PSNR and SSIM.
+
 ## Citation
 If you find this repository useful, please consider citing the original thesis:
 
