@@ -1,4 +1,4 @@
-# Patch-based Focal Frequency Loss for Image Reconstruction PyTorch Implementation
+# Patch-based Focal Frequency Loss for Image Reconstruction
 
 This repository contains the official PyTorch implementation of Patch-based Focal Frequency Loss (PB-FFL), proposed to address the spectral bias and high-frequency information loss inherent in Variational Autoencoder (VAE)-based generative models.
 
@@ -26,7 +26,7 @@ The proposed model demonstrates superior detail reconstruction performance in re
 
 ## Full Paper
 Detailed theoretical backgrounds and experimental results can be found in the original bachelor's thesis. Please note that the paper is written in Korean.
-* [Patch-based Focal Frequency Loss for Image Reconstruction (PDF)](<Patch-based Focal Frequency Loss For Image Reconstruction.pdf>)
+* [Patch-based Focal Frequency Loss for Image Reconstruction (PDF)](Patch-based%20Focal%20Frequency%20Loss%20For%20Image%20Reconstruction.pdf)
 
 ## Repository Structure
 ```text
@@ -72,3 +72,23 @@ python visualize.py
 
 ## Pre-trained Models (Checkpoints)
 Pre-trained weight (.pth) files are uploaded separately to the [Releases] tab of this repository due to file size limits. To perform evaluation and visualization without training the model from scratch, please download the weight files from the Releases tab and place them in the checkpoints/ directory.
+
+## Acknowledgments
+This project is deeply inspired by the core concepts of the original Focal Frequency Loss paper. I sincerely thank the authors for their foundational research and valuable theoretical insights.
+* [Focal Frequency Loss for Image Reconstruction and Synthesis (ICCV 2021)](https://github.com/EndlessSora/focal-frequency-loss)
+
+## Citation
+If you find this repository useful, please consider citing the original thesis:
+
+```bibtex
+@thesis{baek2025pbffl,
+  title={Patch-based Focal Frequency Loss for Image Reconstruction},
+  author={Changju Baek},
+  school={Inha University},
+  year={2025},
+  type={Bachelor's Thesis}
+}
+```
+
+## License
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
