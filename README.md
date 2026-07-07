@@ -27,7 +27,7 @@ The proposed model demonstrates superior detail reconstruction performance in re
 ## Full Paper
 Detailed theoretical backgrounds and experimental results can be found in the original bachelor's thesis.
 
-**Please note: The original thesis is written in KOREAN.**
+**Please note: This thesis is written in KOREAN.**
 * [Patch-based Focal Frequency Loss for Image Reconstruction (PDF)](Patch-based%20Focal%20Frequency%20Loss%20For%20Image%20Reconstruction.pdf)
 
 ## Repository Structure
