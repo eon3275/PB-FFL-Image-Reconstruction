@@ -23,7 +23,7 @@ Flattening and restoring high-dimensional tensors for frequency transformation c
 ## Results
 
 ### Quantitative Comparison
-Experimental results based on the Enhanced Model using the CelebA-HQ resized (256x256) dataset. The proposed PB-FFL significantly improves not only pixel-level metrics but also human perceptual quality (LPIPS).
+The following experimental results are based on the Enhanced Model using the CelebA-HQ resized (256x256) dataset. The proposed PB-FFL significantly improves not only pixel-level metrics but also human perceptual quality (LPIPS).
 
 | Loss Function | PSNR (↑) | SSIM (↑) | LPIPS (↓) |
 | :--- | :---: | :---: | :---: |
@@ -40,7 +40,7 @@ The proposed model demonstrates superior detail reconstruction performance in re
 ![Error Map](results/Comparison_Error.png)
 
 ## Full Paper
-Detailed theoretical backgrounds and experimental results can be found in the original bachelor's thesis.
+Detailed theoretical background and experimental results can be found in the original bachelor's thesis.
 
 **Please note: This thesis is written in KOREAN.**
 * [Patch-based Focal Frequency Loss for Image Reconstruction (PDF)](Patch-based%20Focal%20Frequency%20Loss%20For%20Image%20Reconstruction.pdf)
