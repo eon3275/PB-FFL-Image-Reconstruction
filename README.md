@@ -5,6 +5,21 @@ This repository contains the official PyTorch implementation of Patch-based Foca
 ## Introduction
 Unlike conventional global frequency analysis, the proposed PB-FFL technique utilizes a sliding window approach to simultaneously learn frequency and spatial information in local regions. This prevents the blurring effect during image reconstruction and significantly improves the restoration of fine edges and textures.
 
+## Proposed Method (Architecture)
+The following diagram illustrates the overall pipeline of the proposed Patch-based Focal Frequency Loss.
+
+![PB-FFL Architecture](architecture.PNG)
+
+By extracting local patches via a Sliding Window and applying a 2D Hann Window before the FFT, the model effectively learns high-frequency details without boundary artifacts.
+
+## Core Engineering & Optimization
+While the theoretical concept focuses on local frequency analysis, the implementation of PB-FFL introduces significant engineering challenges, which were addressed from the ground up:
+
+* **Vectorization (`Unfold`) for Bottleneck Resolution:** 
+The sliding window approach inherently increases computational cost by approximately 3.5x compared to global frequency analysis. To prevent severe training bottlenecks, naive loop-based processing was entirely replaced with GPU-accelerated vectorized patch extraction using PyTorch's `Unfold` operation.
+* **Tensor Integrity via Dummy Indexing:** 
+Flattening and restoring high-dimensional tensors for frequency transformation carries a high risk of spatial misalignment. To prevent dimension shifting, a dummy tensor cross-validation method was designed. By tracking inner index values through parallelized codes, absolute dimensional integrity was ensured during the patch merging phase.
+
 ## Results
 
 ### Quantitative Comparison
